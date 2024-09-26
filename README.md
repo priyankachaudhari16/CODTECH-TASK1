@@ -1,8 +1,8 @@
- Name: Priyanka Shamkant Chaudhari
- Company: Code Tech IT Solutions
- ID: CT04DS7523
- Domain: Artificial Intelligence
- Duration: August to September 2024
+**Name:** Priyanka Shamkant Chaudhari
+**Company:** Code Tech IT Solutions
+**ID:** CT04DS7523
+**Domain:** Artificial Intelligence
+**Duration:** August to September 2024
 
 ##  Overview of Project
 
@@ -11,17 +11,17 @@
 
 
 ### Objective:
-The primary goal of this project is to implement a robust **image classification system** using **MobileNet** directly within a web browser. The system enables users to upload an image and classify it into various predefined categories using a pre-trained model. This approach leverages the computational efficiency of **MobileNet**, making it suitable for real-time applications in environments with limited resources, such as mobile or web platforms.
+The primary goal of this project is to implement a robust **image classification system** using **MobileNet** directly within a web browser. Using a pre-trained model, the system enables users to upload an image and classify it into various predefined categories. This approach leverages the computational efficiency of **MobileNet**, making it suitable for real-time applications in environments with limited resources, such as mobile or web platforms.
 
 ### Key Activities:
-1. **Model Selection**: Chose MobileNet, a lightweight deep learning model, due to its efficiency and accuracy on image classification tasks, particularly in browser-based environments.
-2. **TensorFlow.js Integration**: Integrated **TensorFlow.js** for running the deep learning model directly in the browser without the need for server-side processing.
-3. **Model Deployment**: Deployed the pre-trained MobileNet model within the browser, allowing for quick and seamless image classification on the client-side.
+1. **Model Selection**: Choose MobileNet, a lightweight deep learning model, due to its efficiency and accuracy on image classification tasks, particularly in browser-based environments.
+2. **TensorFlow.js Integration**: Integrated **TensorFlow.js** for running the deep learning model directly in the browser without needing server-side processing.
+3. **Model Deployment**: Deployed the pre-trained MobileNet model within the browser, allowing for quick and seamless image classification on the client side.
 4. **Interface Development**: Designed a user-friendly interface where users can upload images and receive real-time classification results.
 5. **Testing & Optimization**: Tested the application across various devices to ensure consistent performance, and optimized the web interface for better user experience and response times.
 
 ### Technologies Used:
-- **TensorFlow.js**: For running the MobileNet model in the browser and enabling in-browser machine learning capabilities.
+- **TensorFlow.js**: To run the MobileNet model in the browser and enable in-browser machine learning capabilities.
 - **MobileNet**: A pre-trained, efficient deep learning model specialized in image classification.
 - **HTML5 & JavaScript**: For building the front-end interface and integrating with TensorFlow.js.
 - **CSS3**: For styling the application and providing a responsive layout.
@@ -40,7 +40,7 @@ The primary goal of this project is to implement a robust **image classification
     ```
 2. Navigate to the project directory:
     ```bash
-    cd image-classification-mobilenet
+    cd image-classification-mobile net
     ```
 3. Open the `index.html` file in any web browser.
 4. Upload an image, and the classification result will be displayed.
