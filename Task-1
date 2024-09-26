@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification with TensorFlow.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #imagePreview {
+            max-width: 300px;
+            margin: 20px 0;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Classification with TensorFlow.js</h1>
+
+    <!-- File input to upload image -->
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <!-- Image preview -->
+    <br/>
+    <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+
+    <!-- Button to classify the image -->
+    <br/>
+    <button id="classifyBtn" style="display: none;">Classify Image</button>
+
+    <!-- Classification result -->
+    <div id="result"></div>
+
+    <script>
+        let model;
+        const imageInput = document.getElementById('imageInput');
+        const imagePreview = document.getElementById('imagePreview');
+        const classifyBtn = document.getElementById('classifyBtn');
+        const resultDiv = document.getElementById('result');
+
+        // Load the pre-trained MobileNet model
+        async function loadModel() {
+            model = await mobilenet.load();
+            console.log('MobileNet model loaded.');
+        }
+
+        // Preview the image when user uploads
+        imageInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block';
+                    classifyBtn.style.display = 'inline';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Classify the uploaded image
+        classifyBtn.addEventListener('click', async function() {
+            resultDiv.innerHTML = 'Classifying...';
+
+            const img = document.getElementById('imagePreview');
+            const predictions = await model.classify(img);
+
+            // Display the classification result
+            resultDiv.innerHTML = '<h2>Classification Results:</h2>';
+            predictions.forEach(prediction => {
+                resultDiv.innerHTML += `<p>${prediction.className}: ${Math.round(prediction.probability * 100)}%</p>`;
+            });
+        });
+
+        // Load the model when the page is loaded
+        window.onload = function() {
+            loadModel();
+        };
+    </script>
+
+</body>
+</html>
