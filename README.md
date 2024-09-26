@@ -1,14 +1,14 @@
-**Name:** Priyanka Shamkant Chaudhari
-**Company:** Code Tech IT Solutions
-**ID:** CT04DS7523
-**Domain:** Artificial Intelligence
-**Duration:** August to September 2024
+**Name:** PRIYANKA SHAMKANT CHAUDHARI  
+**Company:** CODE TECH IT SOLUTIONS 
+**ID:** CT04DS7523 
+**Domain:** ARTIFICIAL INTELLIGENCE 
+**Duration:** AUGUST TO SEPTEMBER 2024 
+
 
 ##  Overview of Project
 
 ## Project: Image Classification with MobileNet in the Browser
 ![Screenshot (34)](https://github.com/user-attachments/assets/01b80c11-8713-43ef-9640-dcdedc567734)
-
 
 ### Objective:
 The primary goal of this project is to implement a robust **image classification system** using **MobileNet** directly within a web browser. Using a pre-trained model, the system enables users to upload an image and classify it into various predefined categories. This approach leverages the computational efficiency of **MobileNet**, making it suitable for real-time applications in environments with limited resources, such as mobile or web platforms.
