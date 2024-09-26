@@ -1,8 +1,8 @@
-## Name: Priyanka Shamkant Chaudhari**
-### Company:**Code Tech IT Solutions**
-### ID:**CT04DS7523**
-### Domain:**Artificial Intelligence**
-### Duration:**August to September 2024**
+# Name: Priyanka Shamkant Chaudhari
+ Company: Code Tech IT Solutions
+ ID: CT04DS7523
+ Domain: Artificial Intelligence
+ Duration: August to September 2024
 
 ##  Overview of Project
 
