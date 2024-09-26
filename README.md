@@ -12,7 +12,8 @@
 ##  Overview of Project
 
 ## Project: Image Classification with MobileNet in the Browser
-![Screenshot (34)](https://github.com/user-attachments/assets/01b80c11-8713-43ef-9640-dcdedc567734)
+![Screenshot (35)](https://github.com/user-attachments/assets/f79d5b91-df3a-4d5e-9034-1fb9e7b981cb)
+
 
 ### Objective:
 The primary goal of this project is to implement a robust **image classification system** using **MobileNet** directly within a web browser. Using a pre-trained model, the system enables users to upload an image and classify it into various predefined categories. This approach leverages the computational efficiency of **MobileNet**, making it suitable for real-time applications in environments with limited resources, such as mobile or web platforms.
